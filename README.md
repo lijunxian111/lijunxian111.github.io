@@ -1,1 +1,1 @@
-This is the source code to Jon Barron's public academic website: https://jonbarron.info/. Feel free to clone this code for your own personal use.
+Forked from Jon Barron's public academic website: https://jonbarron.info/. This is for https://jxLi_03.github.io/.
