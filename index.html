@@ -99,11 +99,24 @@
     </tr>
 	
 
-    <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <img src="images/uncer_tra.jpg" alt="uncer_tra_jpg" style="border-style: none">
-              </td>
-              <td width="75%" valign="middle">
+    <tr onmouseout="uncer_stop()" onmouseover="uncer_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='uncer_image'>
+          <img src='images/uncer_tra.jpg' width=100%>
+        </div>
+        <script type="text/javascript">
+          function uncer_start() {
+            document.getElementById('uncer_image').style.opacity = "1";
+          }
+
+          function uncer_stop() {
+            document.getElementById('uncer_image').style.opacity = "0";
+          }
+          uncer_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
                 <a href="https://github.com/lijunxian111/UIGNN">
                   <span class="papertitle">Uncertainty-aware Traffic Prediction under Missing Data</span>
                 </a>
