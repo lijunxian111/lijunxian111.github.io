@@ -156,6 +156,42 @@
                 <p>Uncertainty quantification (like dropout and evidential deep learning) can be used for better sensor deployment on spatio-temporal traffic prediction.</p>
               </td>
     </tr>
+
+    <tr onmouseout="GNN_KD_stop()" onmouseover="GNN_KD_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='uncer_image'></div>
+          <img src='images/uncer_tra.jpg' width=100%>
+        </div>
+        <script type="text/javascript">
+          function uncer_start() {
+            document.getElementById('uncer_image').style.opacity = "1";
+          }
+
+          function uncer_stop() {
+            document.getElementById('uncer_image').style.opacity = "0";
+          }
+          uncer_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2403.01079">
+                  <span class="papertitle">Teaching MLP More Graph Information: A Three-stage Multitask Knowledge Distillation Framework</span>
+                </a>
+                <br>
+		<a href="https://lijunxian111.github.io/"><strong>Junxian Li</strong></a>,
+		<a href="https://gr.xjtu.edu.cn/en/web/shibin/home">Bin Shi*</a>,
+	        <a href="https://scholar.google.com/citations?hl=en&user=MRTB_-wAAAAJ">Erfei Cui</a>,
+	        <a href="https://labs.engineering.asu.edu/hw/">Hua Wei</a>
+	        <a href="">Qinghua Zheng</a>
+                <br>
+                <em>Arxiv preprint arxiv</em>, 2023
+                <br>
+                <a href="https://arxiv.org/abs/2403.01079">arXiv</a>
+		<p></p>
+                <p>With position encoding and graph heat kernel learning, MLPs can learn topology knowledge of graphs and performance of knowledge distillation between GNNs and MLPs can be obviously improved.</p>
+              </td>
+    </tr>
 	
     <!--
     <tr onmouseout="recon_stop()" onmouseover="recon_start()" bgcolor="#ffffd0">
