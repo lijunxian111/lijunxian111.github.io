@@ -242,6 +242,50 @@
                 <p>We propose ChemVLM, an open-source multimodal large language model for chemical tasks.</p>
               </td>
     </tr>
+
+    <tr onmouseout="critic_v_stop()" onmouseover="critic_v_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='critic_v_image'></div>
+          <img src='images/critic_v.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function critic_v_start() {
+            document.getElementById('critic_v_image').style.opacity = "1";
+          }
+
+          function critic_v_stop() {
+            document.getElementById('critic_v_image').style.opacity = "0";
+          }
+          critic_v_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2411.18203">
+                  <span class="papertitle">Critic-V: VLM Critics Help Catch VLM Errors in Multimodal Reasoning</span>
+                </a>
+                <br>
+		<a href="">Di Zhang</a>,
+	      	<a href="">Jingdi Lei</a>,
+	      	<a href="https://lijunxian111.github.io/"><strong>Junxian Li</strong></a>,
+	        <a href="">Xunzhi Wang</a>,
+	        <a href="">Yujie Liu</a>,
+	        <a href="">Zonglin Yang</a>,
+	        <a href="">Jiatong Li</a>,
+	        <a href="">Weida Wang</a>,
+	        <a href="">Suorong Yang</a>,
+	        <a href="">Jianbo Wu</a>,
+	        <a href="">Peng Ye</a>,
+	        <a href="">Wanli Ouyang</a>,
+	        <a href="">Dongzhan Zhou</a>
+                <br>
+                <em>Arxiv preprint arxiv</em>, 2024
+                <br>
+                <a href="https://arxiv.org/abs/2411.18203">arXiv</a>
+		<p></p>
+                <p>We introduce Critic-V, a novel framework inspired by the Actor-Critic paradigm to boost the reasoning capability of VLMs. .</p>
+              </td>
+    </tr>
 		  
     <!--
     <tr onmouseout="recon_stop()" onmouseover="recon_start()" bgcolor="#ffffd0">
