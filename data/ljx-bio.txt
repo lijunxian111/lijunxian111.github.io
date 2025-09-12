@@ -1,1 +1,1 @@
-Junxian Li is an undergraduate student from School of Computer Science, Xi'an Jiaotong University. During his school years, he got top 1% in his major. He worked on data mining and GNNs and two papers of him were accepted by IJCAI23 and ICDM23.
+Junxian Li is a master student from School of Computer Science, Shanghai Jiao Tong University. During his undergraduate school years, he got top 1% in his major. He worked on data mining and GNNs and two papers of him were accepted by IJCAI23 and ICDM23. Up to now, he also has two papers accepted by AAAI 2025 and CVPR 2025.
