@@ -9,10 +9,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - name: Install Reqs
       run: |
-        sudo apt-get install python3-setuptools
+        sudo apt-get update
+        sudo apt-get install python3-pip python3-setuptools
+        pip3 install --upgrade pip setuptools
     - name: Run
       run: |
         cd ./google_scholar_crawler
