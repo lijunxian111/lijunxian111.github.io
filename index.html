@@ -75,99 +75,54 @@
 
     <h2>Conference papers</h2>
 
-    <tr onmouseout="RL_Mis_stop()" onmouseover="RL_mis_start()">
+	<tr onmouseout="critic_v_stop()" onmouseover="critic_v_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='RL_Mis_image'><!-- <video  width=100% muted autoplay loop>
-          <source src="images/smerf.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video> --></div>
-          <img src='images/RL_Mis.jpg' width=100%>
+          <div class="two" id='critic_v_image'></div>
+          <img src='images/critic_v.png' width=100%>
         </div>
         <script type="text/javascript">
-          function RL_Mis_start() {
-            document.getElementById('RL_Mis_image').style.opacity = "1";
+          function critic_v_start() {
+            document.getElementById('critic_v_image').style.opacity = "1";
           }
 
-          function RL_Mis_stop() {
-            document.getElementById('RL_Mis_image').style.opacity = "0";
+          function critic_v_stop() {
+            document.getElementById('critic_v_image').style.opacity = "0";
           }
-          RL_Mis_stop()
+          critic_v_stop()
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://github.com/derekmei233/MissLight">
-          <span class="papertitle">Reinforcement Learning Approaches for Traffic Signal Control under Missing Data</span>
-        </a>
-        <br>
-		<a href="">Hao Mei</a>,
-		<a href="https://lijunxian111.github.io/"><strong>Junxian Li</strong></a>,
-		<a href="https://gr.xjtu.edu.cn/en/web/shibin/home">Bin Shi</a>,
-	<a href="https://labs.engineering.asu.edu/hw/">Hua Wei*</a>
-        <br>
-        <em>International Joint Conferences on Artifical Intelligence(IJCAI)</em>, 2023
-        <br>
-        <a href="https://github.com/derekmei233/MissLight">project page</a>
-        /
-        <a href="https://arxiv.org/abs/2304.10722">arXiv</a>
-	/
-	<a href="https://www.ijcai.org/proceedings/2023/0251.pdf">Conference Version</a>
-	/
-	<a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=U-b_eXkAAAAJ&citation_for_view=U-b_eXkAAAAJ:M3ejUd6NZC8C"><img src="https://img.shields.io/endpoint?logo=Google%20Scholar&url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Flijunxian111%2Flijunxian111.github.io@google-scholar-stats%2FU-b_eXkAAAAJ:M3ejUd6NZC8C_shieldsio.json&labelColor=ffffff&color=5383ec&style=plastic&label=Citations"></a>
-	<a href="https://github.com/derekmei233/MissLight"><img src="https://img.shields.io/github/stars/derekmei233/MissLight"></a>
-        <p></p>
-        <p>
-        Using DQNs to solve traffic signal control problems under missing data scenario.
-        </p>
-      </td>
-    </tr>
-	
-
-    <tr onmouseout="uncer_stop()" onmouseover="uncer_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='uncer_image'></div>
-          <img src='images/uncer_tra.jpg' width=100%>
-        </div>
-        <script type="text/javascript">
-          function uncer_start() {
-            document.getElementById('uncer_image').style.opacity = "1";
-          }
-
-          function uncer_stop() {
-            document.getElementById('uncer_image').style.opacity = "0";
-          }
-          uncer_stop()
-        </script>
-      </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://github.com/lijunxian111/UIGNN">
-                  <span class="papertitle">Uncertainty-aware Traffic Prediction under Missing Data</span>
+                <a href="https://arxiv.org/abs/2411.18203">
+                  <span class="papertitle">Critic-V: VLM Critics Help Catch VLM Errors in Multimodal Reasoning</span>
                 </a>
                 <br>
-                <a href="">Hao Mei</a>,
-		<a href="https://lijunxian111.github.io/"><strong>Junxian Li</strong></a>,
-		<a href="">Zhiming Liang</a>,
-		<a href="https://jhc.sjtu.edu.cn/~gjzheng/">Guanjie Zheng</a>,
-		<a href="https://gr.xjtu.edu.cn/en/web/shibin/home">Bin Shi</a>,
-	        <a href="https://labs.engineering.asu.edu/hw/">Hua Wei*</a>
+		<a href="">Di Zhang*</a>,
+	      	<a href="https://lijunxian111.github.io/"><strong>Junxian Li*</strong></a>,
+	      	<a href="">Jingdi Lei*</a>,
+	        <a href="">Xunzhi Wang*</a>,
+	        <a href="">Yujie Liu</a>,
+	        <a href="">Zonglin Yang</a>,
+	        <a href="">Jiatong Li</a>,
+	        <a href="">Weida Wang</a>,
+	        <a href="">Suorong Yang</a>,
+	        <a href="">Jianbo Wu</a>,
+	        <a href="">Peng Ye</a>,
+	        <a href="">Wanli Ouyang</a>,
+	        <a href="">Dongzhan Zhou</a>
                 <br>
-                <em>23rd IEEE International Conference on Data Mining (ICDM)</em>, 2023
+                <em>Proceedings of the Computer Vision and Pattern Recognition Conference, 9050-9061</em>
                 <br>
-		<a href="https://github.com/lijunxian111/UIGNN">project page</a>
-                /
-                <a href="https://arxiv.org/abs/2309.06800">arXiv</a>
+                <a href="https://arxiv.org/abs/2411.18203">arXiv</a>
 	        /
-	        <a href="https://ieeexplore.ieee.org/abstract/document/10415744">Conference Version</a>
-	        /
-	        <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=U-b_eXkAAAAJ&citation_for_view=U-b_eXkAAAAJ:fPk4N6BV_jEC"><img src="https://img.shields.io/endpoint?logo=Google%20Scholar&url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Flijunxian111%2Flijunxian111.github.io@google-scholar-stats%2FU-b_eXkAAAAJ:fPk4N6BV_jEC_shieldsio.json&labelColor=ffffff&color=5383ec&style=plastic&label=Citations"></a>
+	       <a href="https://openaccess.thecvf.com/content/CVPR2025/html/Zhang_Critic-V_VLM_Critics_Help_Catch_VLM_Errors_in_Multimodal_Reasoning_CVPR_2025_paper.html">Conference Version</a>
+	         <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=U-b_eXkAAAAJ&citation_for_view=U-b_eXkAAAAJ:zA6iFVUQeVQC"><img src="https://img.shields.io/endpoint?logo=Google%20Scholar&url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Flijunxian111%2Flijunxian111.github.io@google-scholar-stats%2FU-b_eXkAAAAJ:zA6iFVUQeVQC_shieldsio.json&labelColor=ffffff&color=5383ec&style=plastic&label=Citations"></a>
 		<p></p>
-                <p>Uncertainty quantification (like dropout and evidential deep learning) can be used for better sensor deployment on spatio-temporal traffic prediction.</p>
+                <p>We introduce Critic-V, a novel framework inspired by the Actor-Critic paradigm to boost the reasoning capability of VLMs.</p>
               </td>
     </tr>
 
-
-    <tr onmouseout="ChemVLM_stop()" onmouseover="ChemVLM_start()">
+	<tr onmouseout="ChemVLM_stop()" onmouseover="ChemVLM_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
           <div class="two" id='ChemVLM_image'></div>
@@ -223,52 +178,99 @@
               </td>
     </tr>
 
-    <tr onmouseout="critic_v_stop()" onmouseover="critic_v_start()">
+
+	<tr onmouseout="uncer_stop()" onmouseover="uncer_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='critic_v_image'></div>
-          <img src='images/critic_v.png' width=100%>
+          <div class="two" id='uncer_image'></div>
+          <img src='images/uncer_tra.jpg' width=100%>
         </div>
         <script type="text/javascript">
-          function critic_v_start() {
-            document.getElementById('critic_v_image').style.opacity = "1";
+          function uncer_start() {
+            document.getElementById('uncer_image').style.opacity = "1";
           }
 
-          function critic_v_stop() {
-            document.getElementById('critic_v_image').style.opacity = "0";
+          function uncer_stop() {
+            document.getElementById('uncer_image').style.opacity = "0";
           }
-          critic_v_stop()
+          uncer_stop()
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://arxiv.org/abs/2411.18203">
-                  <span class="papertitle">Critic-V: VLM Critics Help Catch VLM Errors in Multimodal Reasoning</span>
+                <a href="https://github.com/lijunxian111/UIGNN">
+                  <span class="papertitle">Uncertainty-aware Traffic Prediction under Missing Data</span>
                 </a>
                 <br>
-		<a href="">Di Zhang*</a>,
-	      	<a href="https://lijunxian111.github.io/"><strong>Junxian Li*</strong></a>,
-	      	<a href="">Jingdi Lei*</a>,
-	        <a href="">Xunzhi Wang*</a>,
-	        <a href="">Yujie Liu</a>,
-	        <a href="">Zonglin Yang</a>,
-	        <a href="">Jiatong Li</a>,
-	        <a href="">Weida Wang</a>,
-	        <a href="">Suorong Yang</a>,
-	        <a href="">Jianbo Wu</a>,
-	        <a href="">Peng Ye</a>,
-	        <a href="">Wanli Ouyang</a>,
-	        <a href="">Dongzhan Zhou</a>
+                <a href="">Hao Mei</a>,
+		<a href="https://lijunxian111.github.io/"><strong>Junxian Li</strong></a>,
+		<a href="">Zhiming Liang</a>,
+		<a href="https://jhc.sjtu.edu.cn/~gjzheng/">Guanjie Zheng</a>,
+		<a href="https://gr.xjtu.edu.cn/en/web/shibin/home">Bin Shi</a>,
+	        <a href="https://labs.engineering.asu.edu/hw/">Hua Wei*</a>
                 <br>
-                <em>Proceedings of the Computer Vision and Pattern Recognition Conference, 9050-9061</em>
+                <em>23rd IEEE International Conference on Data Mining (ICDM)</em>, 2023
                 <br>
-                <a href="https://arxiv.org/abs/2411.18203">arXiv</a>
+		<a href="https://github.com/lijunxian111/UIGNN">project page</a>
+                /
+                <a href="https://arxiv.org/abs/2309.06800">arXiv</a>
 	        /
-	       <a href="https://openaccess.thecvf.com/content/CVPR2025/html/Zhang_Critic-V_VLM_Critics_Help_Catch_VLM_Errors_in_Multimodal_Reasoning_CVPR_2025_paper.html">Conference Version</a>
-	         <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=U-b_eXkAAAAJ&citation_for_view=U-b_eXkAAAAJ:zA6iFVUQeVQC"><img src="https://img.shields.io/endpoint?logo=Google%20Scholar&url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Flijunxian111%2Flijunxian111.github.io@google-scholar-stats%2FU-b_eXkAAAAJ:zA6iFVUQeVQC_shieldsio.json&labelColor=ffffff&color=5383ec&style=plastic&label=Citations"></a>
+	        <a href="https://ieeexplore.ieee.org/abstract/document/10415744">Conference Version</a>
+	        /
+	        <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=U-b_eXkAAAAJ&citation_for_view=U-b_eXkAAAAJ:fPk4N6BV_jEC"><img src="https://img.shields.io/endpoint?logo=Google%20Scholar&url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Flijunxian111%2Flijunxian111.github.io@google-scholar-stats%2FU-b_eXkAAAAJ:fPk4N6BV_jEC_shieldsio.json&labelColor=ffffff&color=5383ec&style=plastic&label=Citations"></a>
 		<p></p>
-                <p>We introduce Critic-V, a novel framework inspired by the Actor-Critic paradigm to boost the reasoning capability of VLMs.</p>
+                <p>Uncertainty quantification (like dropout and evidential deep learning) can be used for better sensor deployment on spatio-temporal traffic prediction.</p>
               </td>
     </tr>
+			  
+    <tr onmouseout="RL_Mis_stop()" onmouseover="RL_mis_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='RL_Mis_image'><!-- <video  width=100% muted autoplay loop>
+          <source src="images/smerf.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video> --></div>
+          <img src='images/RL_Mis.jpg' width=100%>
+        </div>
+        <script type="text/javascript">
+          function RL_Mis_start() {
+            document.getElementById('RL_Mis_image').style.opacity = "1";
+          }
+
+          function RL_Mis_stop() {
+            document.getElementById('RL_Mis_image').style.opacity = "0";
+          }
+          RL_Mis_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://github.com/derekmei233/MissLight">
+          <span class="papertitle">Reinforcement Learning Approaches for Traffic Signal Control under Missing Data</span>
+        </a>
+        <br>
+		<a href="">Hao Mei</a>,
+		<a href="https://lijunxian111.github.io/"><strong>Junxian Li</strong></a>,
+		<a href="https://gr.xjtu.edu.cn/en/web/shibin/home">Bin Shi</a>,
+	<a href="https://labs.engineering.asu.edu/hw/">Hua Wei*</a>
+        <br>
+        <em>International Joint Conferences on Artifical Intelligence(IJCAI)</em>, 2023
+        <br>
+        <a href="https://github.com/derekmei233/MissLight">project page</a>
+        /
+        <a href="https://arxiv.org/abs/2304.10722">arXiv</a>
+	/
+	<a href="https://www.ijcai.org/proceedings/2023/0251.pdf">Conference Version</a>
+	/
+	<a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=U-b_eXkAAAAJ&citation_for_view=U-b_eXkAAAAJ:M3ejUd6NZC8C"><img src="https://img.shields.io/endpoint?logo=Google%20Scholar&url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Flijunxian111%2Flijunxian111.github.io@google-scholar-stats%2FU-b_eXkAAAAJ:M3ejUd6NZC8C_shieldsio.json&labelColor=ffffff&color=5383ec&style=plastic&label=Citations"></a>
+	<a href="https://github.com/derekmei233/MissLight"><img src="https://img.shields.io/github/stars/derekmei233/MissLight"></a>
+        <p></p>
+        <p>
+        Using DQNs to solve traffic signal control problems under missing data scenario.
+        </p>
+      </td>
+    </tr>
+
+
+    
     </tbody></table>
 
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
