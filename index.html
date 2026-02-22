@@ -62,7 +62,7 @@
               <div style="height: 120px; overflow: auto;">
 		
 		<ul> 
-		 <li> [2026.02] Our work "<a href="https://arxiv.org/abs/2508.09456" target="_blank">IAG: Input-aware Backdoor Attack on VLM-based Visual Grounding</a>" (first author) was accepted to CVPR 2026! 🎉</li> 
+		 <li> [2026.02] Our work "<a href="https://arxiv.org/abs/2508.09456" target="_blank">IAG: Input-aware Backdoor Attack on VLM-based Visual Grounding</a>" <strong>(first author)</strong> was accepted to CVPR 2026! 🎉</li> 
                 </ul>
 		<ul> 
 		 <li> [2026.02] Our work "<a href="https://arxiv.org/abs/2512.01223" target="_blank">S^2-MLLM: Boosting Spatial Reasoning Capability of MLLMs for 3D Visual Grounding with Structural Guidance</a>" was accepted to CVPR 2026! 🎉</li> 
@@ -76,6 +76,47 @@
 
     <h2>Conference papers</h2>
 
+	<tr onmouseout="iag_stop()" onmouseover="iag_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='iag_image'></div>
+          <img src='images/iag.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function iag_start() {
+            document.getElementById('iag_image').style.opacity = "1";
+          }
+
+          function iag_stop() {
+            document.getElementById('iag_image').style.opacity = "0";
+          }
+          iag_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2508.09456">
+                  <span class="papertitle">IAG: Input-aware Backdoor Attack on VLM-based Visual Grounding</span>
+                </a>
+                <br>
+	      	<a href="https://lijunxian111.github.io/"><strong>Junxian Li*</strong></a>,
+		  	<a href="">Beining Xu*</a>,
+	       	<a href="https://siminchen.site/">Simin Chen</a>,
+	        <a href="https://phenixace.github.io/">Jiatong Li</a>,
+			<a href="https://scholar.google.com/citations?user=dVyfBiQAAAAJ&hl=en&oi=ao">Jingdi Lei</a>,
+		  	<a href="https://dongdongzhaoup.github.io/">Haodong Zhao</a>,
+	        <a href="https://github.com/trotsky1997">Di Zhang</a>,
+	       
+                <br>
+                <em>CVPR 2026</em>
+                <br>
+                <a href="https://arxiv.org/abs/2508.09456">arXiv</a>
+	        /
+	         <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=U-b_eXkAAAAJ&citation_for_view=U-b_eXkAAAAJ:ZuybSZzF8UAC"><img src="https://img.shields.io/endpoint?logo=Google%20Scholar&url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Flijunxian111%2Flijunxian111.github.io@google-scholar-stats%2FU-b_eXkAAAAJ:ZuybSZzF8UAC_shieldsio.json&labelColor=ffffff&color=5383ec&style=plastic&label=Citations"></a>
+		<p></p>
+                <p>his paper reveals a novel and realistic vulnerability: the first multi-target backdoor attack on VLM-based visual grounding.</p>
+              </td>
+    </tr>
+			  
 	<tr onmouseout="critic_v_stop()" onmouseover="critic_v_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
