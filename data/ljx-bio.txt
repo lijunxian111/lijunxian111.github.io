@@ -1,3 +1,3 @@
 Junxian Li is an incoming Ph.D. student from School of Computer Science, Shanghai Jiao Tong University.   
 
-During his undergraduate and master school years, he got top 1% in his major. He worked on MLLMs, unified multimodal models and MLLM reasoning. Up to now, his publications are: 1xCVPR, 1xAAAI, 1xIJCAI, 1xEMNLP, 1xICDM.  
+During his undergraduate and master school years, he got top 1% in his major. He worked on MLLMs, unified multimodal models and MLLM reasoning. Up to now, his publications are: Conferences: 3xCVPR, 1xAAAI, 1xIJCAI, 1xEMNLP, 1xICDM.  Journal: 1xCCS Chemistry.
