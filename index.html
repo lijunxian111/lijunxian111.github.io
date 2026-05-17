@@ -61,11 +61,11 @@
               <heading>🔥What's New</heading>
               <div style="height: 120px; overflow: auto;">
 		<ul> 
+		 <li> [2026.05] Our work "<a href="https://arxiv.org/abs/2412.14642" target="_blank">Speak-to-Structure: Evaluating LLMs in Open-domain Natural Language-Driven Molecule Generation</a>" <strong>(co-first author)</strong> was accepted to KDD 2026! 🎉</li> 
+                </ul>
+		<ul> 
 		 <li> [2026.04] Our work "<a href="https://arxiv.org/abs/2511.08409" target="_blank">Faithful-First Reasoning, Planning, and Acting for Multimodal LLMs</a>" <strong>(first author)</strong> was accepted to ACL 2026! 🎉</li> 
                 </ul>	
-		<ul> 
-		 <li> [2026.02] Our work "<a href="https://arxiv.org/abs/2508.09456" target="_blank">IAG: Input-aware Backdoor Attack on VLM-based Visual Grounding</a>" <strong>(first author)</strong> was accepted to CVPR 2026! 🎉</li> 
-                </ul>
 			
               </div>
             </td>
@@ -75,7 +75,50 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
     <h2>Conference papers</h2>
+			  
+	<tr onmouseout="S2bench_stop()" onmouseover="S2bench_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='s2bench_image'></div>
+          <img src='images/s2bench.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function S2bench_start() {
+            document.getElementById('s2bench_image').style.opacity = "1";
+          }
 
+          function S2bench_stop() {
+            document.getElementById('s2bench_image').style.opacity = "0";
+          }
+          S2bench_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/pdf/2412.14642">
+                  <span class="papertitle">Speak-to-Structure: Evaluating LLMs in Open-domain Natural Language-Driven Molecule Generation</span>
+                </a>
+                <br>
+		<a href="https://scholar.google.com/citations?user=ml9hh18AAAAJ&hl=en">Jiatong Li*</a>,
+	        <a href=""><strong>Junxian Li*</strong></a>,
+		  <a href="https://scholar.google.com/citations?user=eQXqmG8AAAAJ&hl=en">Weida Wang</a>,
+	        <a href="https://scholar.google.com/citations?user=x8cAD_EAAAAJ&hl=en&oi=ao">Yunqing Liu</a>,
+		  <a href="https://scholar.google.com/citations?user=iTpPTwIAAAAJ&hl=en">Changmeng Zheng</a>,
+		  <a href="https://scholar.google.com/citations?user=oZBTlBkAAAAJ&hl=en&oi=ao">Yatao Bian</a>,
+		   <a href="https://scholar.google.com/citations?user=Ox6SxpoAAAAJ&hl=en&oi=ao">Dongzhan Zhou</a>,
+		   <a href="https://scholar.google.com/citations?hl=en&user=8kxWTokAAAAJ&view_op=list_works&sortby=pubdate">Xiaoyong Wei</a>,
+		   <a href="https://scholar.google.com/citations?user=D1LEg-YAAAAJ&hl=en">Qing Li</a>,
+                <br>
+                <em>KDD</em>, 2026
+                <br>
+                <a href="https://arxiv.org/pdf/2412.14642">arXiv</a>
+	        /
+	        <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=U-b_eXkAAAAJ&citation_for_view=U-b_eXkAAAAJ:mVmsd5A6BfQC"><img src="https://img.shields.io/endpoint?logo=Google%20Scholar&url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Flijunxian111%2Flijunxian111.github.io@google-scholar-stats%2FU-b_eXkAAAAJ:mVmsd5A6BfQC_shieldsio.json&labelColor=ffffff&color=5383ec&style=plastic&label=Citations"></a>
+		  <a href="https://github.com/phenixace/TOMG-Bench"><img src="https://img.shields.io/github/stars/phenixace/TOMG-Bench?style=social"></a>
+		<p></p>
+                <p>We introduce S2-bench, a benchmark for open-ended molecule generation, benefiting molecule discovery and medicine design.</p>
+              </td>
+    </tr>
+			  
 	<tr onmouseout="AttnDiff_stop()" onmouseover="AttnDiff_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
@@ -115,6 +158,7 @@
                 <p>We introduce AttnDiff, an attention-based LLM watermarking technique.</p>
               </td>
     </tr>
+
 
 	<tr onmouseout="Faith_stop()" onmouseover="Faith_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
