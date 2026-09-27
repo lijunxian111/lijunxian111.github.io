@@ -117,6 +117,50 @@
               </td>
     </tr>
 
+	<tr onmouseout="Mem_stop()" onmouseover="Mem_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='delta_mem_image'></div>
+          <img src='images/delta-mem.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function Mem_start() {
+            document.getElementById('delta_mem_image').style.opacity = "1";
+          }
+
+          function Mem_stop() {
+            document.getElementById('delta_mem_image').style.opacity = "0";
+          }
+          Mem_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2605.12357">
+                  <span class="papertitle">δ-mem: Efficient Online Memory for Large Language Models</span>
+                </a>
+                <br>
+		  <a href="https://kyrielei.github.io/">Jingdi Lei</a>,
+		  <a href="https://di-zhang-llm.github.io/">Di Zhang</a>,
+		<a href="https://lijunxian111.github.io/"><strong>Junxian Li</strong></a>,
+		  <a href="https://davidweidawang.github.io/">Weida Wang</a>,
+		  <a href="https://scholar.google.com/citations?hl=en&user=V2KHBeUAAAAJ">Kaixuan Fan</a>,
+		  <a href="">Xiang Liu</a>,
+		  <a href="">Qihan Liu</a>,
+		  <a href="">Xiaoteng Ma</a>,
+		  <a href="">Baian Chen</a>,
+		  <a href="https://soujanyaporia.github.io/">Soujanya Poria</a>
+                <br>
+                <em>NeurIPS</em>, 2026
+                <br>
+                <a href="https://arxiv.org/abs/2605.12357">arXiv</a>
+	        /
+	        <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=U-b_eXkAAAAJ&citation_for_view=U-b_eXkAAAAJ:mKu_rENv82IC"><img src="https://img.shields.io/endpoint?logo=Google%20Scholar&url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Flijunxian111%2Flijunxian111.github.io@google-scholar-stats%2FU-b_eXkAAAAJ:mKu_rENv82IC_shieldsio.json&labelColor=ffffff&color=5383ec&style=plastic&label=Citations"></a>
+		  <a href="https://github.com/declare-lab/delta-Mem"><img src="https://img.shields.io/github/stars/declare-lab/delta-Mem?style=social"></a>
+		<p></p>
+                <p>This paper proposes δ-mem, a memory mechanism that keeps a compact and dynamically updated memory alongside a frozen full-attention backbone.</p>
+              </td>
+    </tr>
+
 	<tr onmouseout="slowba_stop()" onmouseover="slowba_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
