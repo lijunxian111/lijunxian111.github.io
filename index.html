@@ -139,8 +139,8 @@
                   <span class="papertitle">δ-mem: Efficient Online Memory for Large Language Models</span>
                 </a>
                 <br>
-		  <a href="https://kyrielei.github.io/">Jingdi Lei</a>,
-		  <a href="https://di-zhang-llm.github.io/">Di Zhang</a>,
+		  <a href="https://kyrielei.github.io/">Jingdi Lei*</a>,
+		  <a href="https://di-zhang-llm.github.io/">Di Zhang*</a>,
 		<a href="https://lijunxian111.github.io/"><strong>Junxian Li</strong></a>,
 		  <a href="https://davidweidawang.github.io/">Weida Wang</a>,
 		  <a href="https://scholar.google.com/citations?hl=en&user=V2KHBeUAAAAJ">Kaixuan Fan</a>,
@@ -158,6 +158,48 @@
 		  <a href="https://github.com/declare-lab/delta-Mem"><img src="https://img.shields.io/github/stars/declare-lab/delta-Mem?style=social"></a>
 		<p></p>
                 <p>This paper proposes δ-mem, a memory mechanism that keeps a compact and dynamically updated memory alongside a frozen full-attention backbone.</p>
+              </td>
+    </tr>
+
+	<tr onmouseout="Permu_stop()" onmouseover="Permu_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='permu_image'></div>
+          <img src='images/permu_quant.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function Permu_start() {
+            document.getElementById('permu_image').style.opacity = "1";
+          }
+
+          function Permu_stop() {
+            document.getElementById('permu_image').style.opacity = "0";
+          }
+          Permu_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2605.09503">
+                  <span class="papertitle">PermuQuant: Lowering Per-Group Quantization Error by Reordering Channels for Diffusion Models</span>
+                </a>
+                <br>
+		<a href=""><strong>Yongsen Cheng*</strong></a>,
+	        <a href="https://kai-liu.cn/">Kai Liu*</a>,
+		  <a href="">Kaiwen Tao</a>,
+		  <a href="https://lijunxian111.github.io/"><strong>Junxian Li</strong></a>
+		  <a href="https://arxiv.org/pdf/2606.30054">Zhixin Wang</a>,
+		  <a href="https://scholar.google.com/citations?hl=en&user=6EW56pIAAAAJ">Zhikai Chen</a>,
+		  <a href="https://scholar.google.com/citations?hl=en&user=0bEWhfsAAAAJ">Renjing Pei</a>,
+		  <a href="yulunzhang.com">Yulun Zhang</a>
+                <br>
+                <em>NeurIPS</em>, 2026
+                <br>
+                <a href="https://arxiv.org/abs/2605.09503">arXiv</a>
+	        /
+	        <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=U-b_eXkAAAAJ&citation_for_view=U-b_eXkAAAAJ:yFnVuubrUp4C"><img src="https://img.shields.io/endpoint?logo=Google%20Scholar&url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Flijunxian111%2Flijunxian111.github.io@google-scholar-stats%2FU-b_eXkAAAAJ:yFnVuubrUp4C_shieldsio.json&labelColor=ffffff&color=5383ec&style=plastic&label=Citations"></a>
+		  <a href="https://github.com/yscheng04/PermuQuant"><img src="https://img.shields.io/github/stars/yscheng04/PermuQuant?style=social"></a>
+		<p></p>
+                <p>This paper proposes PermuQuant, a method for low-bit quantization based on channel ordering.</p>
               </td>
     </tr>
 
