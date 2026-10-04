@@ -1,33 +1,55 @@
 name: Get Citation Data
 
-on: 
- #page_build: 
- workflow_dispatch:
- schedule:
-  - cron:  '0 8 * * *'
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 8 * * *'
+
+permissions:
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
+
     steps:
-    - uses: actions/checkout@v3
-    - name: Install Reqs
-      run: |
-        sudo apt-get update
-        sudo apt-get install python3-pip python3-setuptools
-        pip3 install --upgrade pip setuptools
-    - name: Run
-      run: |
-        cd ./google_scholar_crawler
-        pip3 install -r requirements.txt
-        python3 main.py
-        cd ./results
-        git init
-        git config --local user.email "1713546501@qq.com"
-        git config --local user.name "lijunxian111"
-        export remote_repo="https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git"
-        git add *.json
-        git commit -m "Updated Citation Data"
-        git push "${remote_repo}" HEAD:google-scholar-stats --force
-      env: 
-        GOOGLE_SCHOLAR_ID: "U-b_eXkAAAAJ"
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+          cache-dependency-path: google_scholar_crawler/requirements.txt
+
+      - name: Install requirements
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r google_scholar_crawler/requirements.txt
+
+      - name: Fetch Google Scholar citations
+        env:
+          GOOGLE_SCHOLAR_ID: "U-b_eXkAAAAJ"
+        run: |
+          cd google_scholar_crawler
+          python main.py
+
+      - name: Push citation data
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd google_scholar_crawler/results
+
+          git init
+          git config user.email "1713546501@qq.com"
+          git config user.name "lijunxian111"
+
+          git add *.json
+          git commit -m "Updated Citation Data"
+
+          git remote add origin \
+            "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+
+          git push origin HEAD:google-scholar-stats --force
