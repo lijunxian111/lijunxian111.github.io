@@ -34,7 +34,7 @@ jobs:
           GOOGLE_SCHOLAR_ID: "U-b_eXkAAAAJ"
         run: |
           cd google_scholar_crawler
-          python main.py
+          python -u main.py
 
       - name: Push citation data
         env:
