@@ -30,7 +30,7 @@ def setup_proxy():
         pg = ProxyGenerator()
 
         if pg.FreeProxies():
-            scholarly.use_proxy(pg)
+            scholarly.use_proxy(pg, pg)
             print("Free proxy configured successfully.")
         else:
             print("No working free proxy found. Falling back to direct access.")
