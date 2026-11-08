@@ -161,6 +161,50 @@
                 <p>This paper proposes δ-mem, a memory mechanism that keeps a compact and dynamically updated memory alongside a frozen full-attention backbone.</p>
               </td>
     </tr>
+    
+<tr onmouseout="TwinPrune_stop()" onmouseover="TwinPrune_start()">
+  <td style="padding:20px;width:25%;vertical-align:middle">
+    <div class="one">
+      <div class="two" id="twinprune_image"></div>
+      <img src="images/twinprune.png" width="100%">
+    </div>
+    <script type="text/javascript">
+      function TwinPrune_start() {
+        document.getElementById('twinprune_image').style.opacity = "1";
+      }
+
+      function TwinPrune_stop() {
+        document.getElementById('twinprune_image').style.opacity = "0";
+      }
+      TwinPrune_stop();
+    </script>
+  </td>
+
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <a href="https://arxiv.org/abs/2610.17530">
+      <span class="papertitle">TwinPrune: Density-Aware Two-Phase Token Pruning for Vision-Language Models</span>
+    </a>
+    <br>
+    <a href="https://kai-liu.cn/">Kai Liu*</a>,
+    <a href="">Anqi Li*</a>,
+    <a href="https://lijunxian111.github.io/"><strong>Junxian Li</strong></a>,
+    <a href="https://arxiv.org/pdf/2606.30054">Zhixin Wang</a>,
+    <a href="https://scholar.google.com/citations?hl=en&user=6EW56pIAAAAJ">Zhikai Chen</a>,
+	<a href="https://scholar.google.com/citations?hl=en&user=0bEWhfsAAAAJ">Renjing Pei</a>,
+    <a href="https://yulunzhang.com/">Yulun Zhang</a>
+    <br>
+    <em>NeurIPS</em>, 2026
+    <br>
+    <a href="https://arxiv.org/abs/2610.17530">arXiv</a>
+    /
+    <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=U-b_eXkAAAAJ&citation_for_view=U-b_eXkAAAAJ:4e5Qn2KL_jwC"><img src="https://img.shields.io/endpoint?logo=Google%20Scholar&url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Flijunxian111%2Flijunxian111.github.io@google-scholar-stats%2FU-b_eXkAAAAJ:4e5Qn2KL_jwC_shieldsio.json&labelColor=ffffff&color=5383ec&style=plastic&label=Citations"></a>
+    <a href="https://github.com/Kai-Liu001/TwinPrune">
+      <img src="https://img.shields.io/github/stars/Kai-Liu001/TwinPrune?style=social">
+    </a>
+    <p></p>
+    <p>This paper proposes TwinPrune, a density-aware two-phase visual token pruning framework that accelerates prefill through token merging and reduces decode memory via KV cache eviction.</p>
+  </td>
+</tr>
 
 	<tr onmouseout="Permu_stop()" onmouseover="Permu_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
